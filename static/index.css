@@ -1,0 +1,36 @@
+html, body {
+    height: 100%;
+    margin: 0;
+}
+
+#main {
+    display: flex;
+    flex-direction: column;
+
+    height: 100%;
+}
+#main > * {
+    flex-grow: 0;
+}
+#cols {
+    flex-grow: 1;
+    max-height: 100vh;
+}
+
+#cols .column {
+    background-color: rgb(245, 245, 245);
+    border-radius: 15px;
+    margin: 20px;
+}
+
+#status {
+    display: none;  
+}
+#status-text {
+    display: inline-block;
+}
+#status-val {
+    color: #00d1b2;
+    font-weight: bold;
+    margin-left: 0.2rem;
+}

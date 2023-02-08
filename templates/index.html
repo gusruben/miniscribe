@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Miniscribe</title>
+        <link rel="stylesheet" href="/static/index.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+        <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    </head>
+    <body>
+
+        <div class="section" id="main">
+            <h1 class="title is-1">Miniscribe</h1>
+    
+            <div class="container">
+                <div class="box">
+                    <input id="url" type="text" placeholder="Video Link" class="input" value="http://0.0.0.0:8000/try-something-new-for-30-days-matt-cutts.mp4">
+                    <button id="generateButton" class="button mt-2">Generate Notes</button>
+                    
+                    <div id="status" class="m-2 mt-5">
+                        <p id="status-text" class="mb-2">Connecting to server...</p>
+                        <span id="status-val"></span>
+                        <progress id="status-progress" class="progress is-primary" max="100">Test</progress>
+                    </div>
+                </div>
+            </div>
+
+            
+
+            <div class="columns mt-4" id="cols">
+                <div class="column box">
+                    <h2 class="title is-2 has-text-centered">Notes</h2>
+                    <div id="notes" class="content"></div>
+                </div>
+                <div class="column box">
+                    <h2 class="title is-2 has-text-centered">Transcript</h2>
+                    <div id="transcription" class="content"></div>
+                </div>
+            </div>
+        </div>
+
+
+        <script src="/static/index.js" async defer></script>
+    </body>
+</html>
